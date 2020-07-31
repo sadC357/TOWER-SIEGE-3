@@ -4,10 +4,12 @@ class Box{
       restiitution:0.4,
       friction:0
     }
+    //super(x,y,width,height);
     this.body=Bodies.rectangle(x,y,width,height,options);
     this.width=width;
     this.height=height;
     World.add(world,this.body);
+    //this.image = loadImage("sprites/wood1.png");
     this.Visiblity=255;
   }
 
@@ -36,5 +38,4 @@ class Box{
       score++;
     }
   }
-
 }
